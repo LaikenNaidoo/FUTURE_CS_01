@@ -1,5 +1,5 @@
 # FUTURE_CS_01
-# # 🔐 Passive Web Application Vulnerability Assessment  
+# 🔐 Passive Web Application Vulnerability Assessment  
 
 # 📌 Overview  
 
