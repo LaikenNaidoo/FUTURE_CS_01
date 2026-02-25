@@ -69,7 +69,3 @@ No active scanning modules were enabled.
 - Missing Anti-Clickjacking Header  
 
 These findings should be prioritised to reduce exposure to client-side attacks such as Cross-Site Scripting (XSS), clickjacking, and unauthorized request execution.
-
----
-
-## 📁 Repository Structure  
