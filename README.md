@@ -1,7 +1,7 @@
 # FUTURE_CS_01
-# 🔐 Passive Web Application Vulnerability Assessment  
+# Passive Web Application Vulnerability Assessment  
 
-# 📌 Overview  
+# Overview  
 
 This repository contains a professional **Passive Web Application Vulnerability Assessment** conducted using **OWASP ZAP (Passive Mode)**.
 
@@ -16,7 +16,7 @@ All testing was conducted using strictly **read-only, non-intrusive techniques**
 
 ---
 
-## 🌐 Target Application  
+## Target Application  
 
 Public Demo Application:  
 http://testphp.vulnweb.com  
@@ -33,7 +33,7 @@ The assessment did **not** include:
 
 ---
 
-## 🛠 Methodology  
+## Methodology  
 
 The assessment was conducted using:
 
@@ -51,7 +51,7 @@ No active scanning modules were enabled.
 
 ---
 
-## 📊 Risk Summary  
+## Risk Summary  
 
 | Risk Level     | Count |
 |---------------|--------|
@@ -62,7 +62,7 @@ No active scanning modules were enabled.
 
 ---
 
-## 🚨 Medium Risk Findings  
+## Medium Risk Findings  
 
 - Content Security Policy (CSP) Header Not Set  
 - Absence of Anti-CSRF Tokens  
