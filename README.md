@@ -1,27 +1,32 @@
 # FUTURE_CS_01
-# Passive Web Application Vulnerability Assessment  
 
-# Overview  
-
-This repository contains a professional **Passive Web Application Vulnerability Assessment** conducted using **OWASP ZAP (Passive Mode)**.
-
-The objective of this assessment was to:
-
-- Identify common web security weaknesses  
-- Classify risks based on severity (High / Medium / Low / Informational)  
-- Explain technical findings in clear, business-friendly language  
-- Provide practical and actionable remediation recommendations  
-
-All testing was conducted using strictly **read-only, non-intrusive techniques**.
+## Passive Web Application Vulnerability Assessment
 
 ---
 
-## Target Application  
+## Overview
 
-Public Demo Application:  
+This repository contains a structured Passive Web Application Vulnerability Assessment conducted as part of the Future Interns Cyber Security track.
+
+The objective of this assessment was to identify observable security weaknesses using ethical, read-only testing techniques and present findings in a professional, business-oriented format.
+
+The assessment focused on:
+
+- Identifying common web security misconfigurations  
+- Classifying risk severity (High / Medium / Low / Informational)  
+- Explaining security impact in business-friendly language  
+- Providing practical remediation recommendations  
+
+All testing was conducted using strictly non-intrusive and passive techniques.
+
+---
+
+## Target Application
+
+**Public Demo Application:**  
 http://testphp.vulnweb.com  
 
-Scope was limited to publicly accessible pages only.  
+Scope was limited to publicly accessible pages and client-side components.
 
 The assessment did **not** include:
 
@@ -29,29 +34,29 @@ The assessment did **not** include:
 - Exploitation of vulnerabilities  
 - Brute-force testing  
 - Denial-of-Service (DoS) activity  
-- Internal infrastructure testing  
+- Internal infrastructure analysis  
 
 ---
 
-## Methodology  
+## Methodology
 
-The assessment was conducted using:
+Testing was conducted using:
 
-- **OWASP ZAP (Passive Mode)**  
-- **Firefox Browser (Proxied Through ZAP)**  
+- OWASP ZAP (Passive Mode)  
+- Firefox Browser (proxied through ZAP)  
 
 Manual browsing was performed to allow passive inspection of:
 
 - HTTP response headers  
-- Cookie configurations  
-- Client-side security controls  
-- Information disclosure through server responses  
+- Cookie security attributes  
+- Client-side protections  
+- Information disclosure via server responses  
 
-No active scanning modules were enabled.
+No active scanning modules or exploitation tools were used during this engagement.
 
 ---
 
-## Risk Summary  
+## Risk Summary
 
 | Risk Level     | Count |
 |---------------|--------|
@@ -60,12 +65,27 @@ No active scanning modules were enabled.
 | Low Risk      | 5      |
 | Informational | 4      |
 
+**Overall Security Posture: Moderate Risk**
+
 ---
 
-## Medium Risk Findings  
+## Medium Risk Findings (Priority)
 
 - Content Security Policy (CSP) Header Not Set  
 - Absence of Anti-CSRF Tokens  
 - Missing Anti-Clickjacking Header  
 
-These findings should be prioritised to reduce exposure to client-side attacks such as Cross-Site Scripting (XSS), clickjacking, and unauthorized request execution.
+These findings may increase exposure to:
+
+- Cross-Site Scripting (XSS)  
+- Clickjacking  
+- Unauthorized request execution  
+
+Immediate remediation of Medium-risk findings is recommended.
+
+---
+
+## Deliverables
+
+- Vulnerability Assessment Report (PDF)  
+- Supporting Evidence (OWASP ZAP screenshots)
